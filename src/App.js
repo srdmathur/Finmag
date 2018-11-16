@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HexGrid from './components/hexGrid/HexGrid';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <div className="Bg-img"></div>
           <h1>FINMAG</h1>
           <p>An advanced expense management app</p>
-        </header>
+          <HexGrid/>
       </div>
     );
   }

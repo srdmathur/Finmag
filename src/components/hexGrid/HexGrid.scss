@@ -1,0 +1,104 @@
+.Hex-container {
+  text-align: left;
+  margin: 0 auto;
+}
+
+ol {
+  margin: 0;
+}
+
+ol.even {
+  position: relative;
+  left: 0;
+  padding: 0;
+  margin: 20px;
+}
+ol.odd {
+  position: relative;
+  left: 16px;
+}
+.hex {
+  margin: 0 2px;
+  position: relative;
+  width: 68px;
+  height: 40px;
+  display: inline-block;
+  transition: all 150ms ease-in-out;
+}
+
+.hex-span {
+    position: absolute;
+    width: 120%;
+    z-index: 2;
+    left: -9px;
+    top: -5px;
+    height: 50px;
+    &:before, &:after {
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        content: '';
+    }
+    &:before {
+        transform: rotate(60deg);
+      }
+    &:after {
+        transform: rotate(-60deg);
+    }
+    &.top-left:before{
+        border-left: 2px solid red;
+        left: 0px;
+        top: 0px;
+    }
+    &.bottom-right:before{
+        border-right: 2px solid red;
+        left: 0px;
+        top: 0px;
+    }
+    &.bottom-left:after{
+        border-left: 2px solid red;
+        left: 0px;
+        top: 0px;
+    }
+    &.top-right:after{
+        border-right: 2px solid red;
+        left: 0px;
+        top: 0px;
+    }
+    &.left {
+        border-left: 2px solid;
+    }
+    &.right {
+        border-right: 2px solid;
+    }
+    &.white {
+        border-color: red;
+    }   
+}
+
+.hex:before, .hex:after {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.hex:before {
+  transform: rotate(60deg);
+}
+.hex:after {
+  transform: rotate(-60deg);
+}
+
+.light {
+    background-color: #6bb8e4;
+}
+
+.dark {
+    background-color: #0689bd;
+}
+
+.darker {
+    background-color: #105177;
+}

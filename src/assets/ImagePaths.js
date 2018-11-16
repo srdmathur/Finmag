@@ -1,0 +1,1 @@
+export {default as IMG_LOGO} from './images/logo.svg';
