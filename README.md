@@ -1,3 +1,5 @@
+![alt text](https://github.com/srdmathur/Finmag/blob/master/src/assets/images/f-logo-lowercase-s.png)
+
 ## Manage Your Expenses More Efficiently
 
 Trying multiple expense and budget management application one after other inspired me to create a simplified, featured, powerful and extremely fast expense management application. 
